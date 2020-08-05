@@ -1,4 +1,7 @@
 #Given a collection of intervals, merge all overlapping intervals.
+# leetcode problem:
+#https://leetcode.com/problems/merge-intervals/
+#Greedy algorithm ----> sort based on start time
 
 
 arr = [[1,3],[2,6],[8,10],[15,18]]
