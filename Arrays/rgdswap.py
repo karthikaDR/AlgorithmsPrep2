@@ -1,3 +1,4 @@
+# this problem can be solved using dutch flag algorithm
 arr1 = ['G', 'B', 'R', 'G','B','B','R', 'G','B']
 arr = ['G','B','R','R','B','R','G']
 
