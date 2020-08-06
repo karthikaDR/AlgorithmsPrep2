@@ -3,10 +3,15 @@ def checkword(board, row,column, string):
         if len(string) == 0:
             word = 'Found'
             return word
+        
+        #Increment/Decrement the row and column 
         dfs = [(0,1), (0,-1), (1,0),(-1,0)]
         
         if (row >= len(board) or row < 0 or column >= len(board[0]) or column < 0 or board[row][column] != string[0]):
             return
+
+        # Change the current checking entry to '@'
+        #so that it is not traversed again.
         temp = board[row][column]
         board[row][column] = '@'  
         for i, j in dfs:               
@@ -23,6 +28,7 @@ def wordsearch(board, rows,columns):
     for row in range(rows):
         for column in range(columns):
             
+            #Check only if the current entry starts with the string first letter
             if board[row][column] == word[0]:
                 if (checkword(board, row,column, word)):
                     return True

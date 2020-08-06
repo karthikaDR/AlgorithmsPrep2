@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/corporate-flight-bookings/
+# 
 # There are n flights, and they are labeled from 1 to n.
 # We have a list of flight bookings.  
 # The i-th booking bookings[i] = [i, j, k] means that we booked 
@@ -16,9 +18,6 @@ for x, y, z in bookings:
     output[x-1] += z    
     output[y] -= z
     
-    
-
-
 for i in range(1,n):    
     output[i] += output[i-1]  
       

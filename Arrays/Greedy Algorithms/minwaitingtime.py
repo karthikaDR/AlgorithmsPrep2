@@ -12,4 +12,4 @@ for i in range(1, len(arr)):
     temp += arr[i-1]
     temp1 += temp
 
-print(arr1, sum(arr1), temp1)
+print(temp1)
